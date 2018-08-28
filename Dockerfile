@@ -31,4 +31,4 @@ COPY --from=repo /repo/commit.hash ./
 # Run with Gunicorn
 
 ENV WORKERS=4
-CMD /usr/local/bin/gunicorn --bind 0.0.0.0:5000 --workers ${WORKERS} app:app
+CMD /usr/local/bin/gunicorn --bind 0.0.0.0:5000 --workers ${WORKERS} app.main:app
