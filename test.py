@@ -4,7 +4,7 @@ import unittest
 class KnownValues(unittest.TestCase):
 
     def test_in_a_container_step(self):
-        self.assertEqual(1, 2)
+        self.assertEqual(1, 1)
 
 
 if __name__ == '__main__':
